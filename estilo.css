@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+:root {
+  
+    --corti0: #d1d1f5;
+    --corti1: #b8bada;
+    --corti2: #4548b6;
+    
+    --corconf0: #DACCBC;
+    --corconf1: #D5B263;
+    --corconf2: #9F7F55;
+    
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--corconf1), var(--corconf2));
+    /*min-height: 150px;*/
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-size: 3em;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267)
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+nav {
+    background-color: var(--corconf2);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--corconf1);
+    color: var(--corconf2)
+}
+
+body {
+    background-color: var(--corconf0);
+}
+
+
+    
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2rem;
+    padding-left: 30px;
+    font-size: 2.5vw;
+    /*min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+}
+
+
+section.normal {
+    
+    color: black;
+}
+
+section.padrao {
+   box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.padrao > p {
+    color: white;
+    display: inline-block;
+    line-height: 1.5vh;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#bis {
+    background-image: url(imagens/fundo_cookies.jpg);
+    background-position: right center;
+}
+
+section#pao {
+    background-image: url(imagens/fundo_pao.jpg);
+}
+
