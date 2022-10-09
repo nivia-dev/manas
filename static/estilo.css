@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
+@font-face {
+    font-family: 'Hacker';
+    src: url('/static/fontes/Hacked CRT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
 :root {
 
     --cor0: #e4c7f5;
@@ -23,18 +30,20 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --font_tec: 'Rubinik Dirt', cursive;
     --font-conf: 'Bungee Spice', cursive;
+
+   
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
-    
+        
 }
 
 html, body {
     min-height: 100vh;
     font-family: var(--fonte1);
+    font-size: 62,5%;
 }
 
 header {
@@ -84,6 +93,9 @@ section#bor1, #bor3 {
     box-shadow: -2px 0px 5px rgb(102, 67, 67);
 }
 
+h1 {
+    font-size: 2rem;
+}
 
 h1#ti, #conf, #pub {
     text-align: left;
@@ -92,6 +104,25 @@ h1#ti, #conf, #pub {
 h1#nut, #pat {
     text-align: right;
 }
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--cor2);
+    }
+
+a:active {
+    color: var(--corconf3);
+    }
+a:hover{
+    text-decoration: underline overline;
+    color: var(--corconf3);
+    background-color: var(--corconf0);
+    font-size: 2rem;
+    }
+
 
 /*CSS index*/
 body.ind {
@@ -146,6 +177,9 @@ body.conf {
     color: var(--corconf2)
 }
 
+button a {
+    
+}
     
 .conf section {
     padding-top: 10vh;
@@ -184,3 +218,9 @@ body.conf {
     background-position: right center;
 }
 
+/*CSS Tecno*/
+
+header.tec > h1 {
+    font-family: 'Hacker', Arial ;
+    font-size: 20px;
+}

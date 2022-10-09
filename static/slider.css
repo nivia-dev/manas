@@ -1,0 +1,72 @@
+:root {
+    --corconf0: #DACCBC;
+    --corconf1: #D5B263;
+    --corconf2: #9F7F55;
+    --corconf3: #4b3923;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--corconf0), var(--corconf1));
+    font-size: 2em;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+body {
+    background-color: var(--corconf0);
+}
+
+.box {
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.box-image {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    animation: anima;
+    animation-duration: 800ms;
+}
+
+@keyframes anima{
+    from {transform: translate(-50px,00);}
+    to{transform: translate(0px,00);}
+}
+
+.bolinhas{
+    margin-top: 100px;
+
+    margin-left: 400px;
+}
+
+.bolinhas span{
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--corconf1);
+}
+
+.bolinhas span.marcador{
+
+   background-color: var(--corconf3);
+}
