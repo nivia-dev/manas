@@ -21,7 +21,7 @@
     --corti1: #b8bada;
     --corti2: #4548b6;
 
-    
+    --corconf: #f1d8bc;
     --corconf0: #DACCBC;
     --corconf1: #D5B263;
     --corconf2: #9F7F55;
@@ -105,12 +105,16 @@ h1#nut, #pat {
     text-align: right;
 }
 
+a {
+    color: var(--corconf3);
+    margin-right: 10px;
+}
 a:link, a:visited, a:active {
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--cor2);
+    color: rgb(255, 255, 255);
     }
 
 a:active {
@@ -140,7 +144,7 @@ body.conf {
 }
 
 
-.conf div {
+#borda {
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -177,7 +181,8 @@ body.conf {
     color: var(--corconf2)
 }
 
-button a {
+button {
+    display: block;
     
 }
     
@@ -217,6 +222,47 @@ button a {
     background-image: url(/static/imagens/fundo_pao.jpg);
     background-position: right center;
 }
+.modal-header {
+    padding-bottom: 20px;
+}
+
+.btn-info {
+    font-size: 2rem;
+    background-color: var(--corconf);
+    border-color: var(--corconf3);
+    color: black;
+    border-radius: 10px;
+}
+
+.btn-info:hover {
+    background-color: var(--corconf0);
+    color: black;
+    border-color: var(--corconf3);
+}
+
+
+
+.carousel-indicators, .modal-header, .carousel-inner {
+    background-color: var(--corconf0);
+}
+
+.carousel-indicators li {
+    background-color: var(--corconf1);
+}
+
+.carousel-indicators .active {
+    background-color: var(--corconf3);
+}
+
+span {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.carousel-inner>.item>img {
+    margin: auto;;
+}
+    
 
 /*CSS Tecno*/
 

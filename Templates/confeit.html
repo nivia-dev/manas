@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria</title>
-    <link rel="stylesheet" href="/static/estilo.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/estilo.css">
+        
 </head>
 <body class="conf">
-    <div>
+    <div id="borda">
         <header>
-            <h1>Delicato Chocolates</h1>
-            <p>Confeitaria</p>
+            <h1>Confeitaria</h1>
+            
         </header>
         <nav>
             <a href="sobreConf.html">Sobre</a>
@@ -19,11 +21,7 @@
         </nav>
         <main>
             <section class="padrao" id="bis">
-                <button type="button" onclick="evento()">
-                    <h1>Biscoiteria</h1>
-                    
-                </button>
-        
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ModalCarousel">Biscoiteria</button><br>
                 <p>
                     Presenteie Amigos e Parentes.<br>
                     Com essas delícias de <br>
@@ -33,7 +31,9 @@
              </section>
         
              <section class="normal">
-                <h1>Bolos</h1>
+                
+                    <button type="button" class="btn-info btn-lg" data-toggle="modal" data-target="#ModalCarouselB">Bolos</button><br>
+                
                 <p>
                     Que tal um café da tarde com bolo? <br>
                     Experimente essa delícia...
@@ -41,7 +41,8 @@
         
             </section>
             <section class="padrao" id="pao">
-                <h1>Pães</h1>
+                <button type="button" class="btn-info btn-lg" data-toggle="modal" data-target="#ModalCarouselP">Pães</button><br>
+                
                 <p>
                     Hummm. Pão quentinho.... <br>
                     Pães Caseiros de longa Fermentação <br>
@@ -49,20 +50,211 @@
                 </p>
             </section>
             <section class="normal" id="esp">
-               <h1>Momentos Especiais</h1>
+               <button type="button" class="btn-info btn-lg" data-toggle="modal" data-target="#ModalCarouselE">Momentos Especiais</button><br>
+               
                <p>
-                   Comemore a vida com <br>
-                   bolos decorativos, <br>
-                   feitos sob encomenda.
+                   Comemore a vida com bolos<br>
+                   decorativos, feitos sob encomenda.
                 </p>
             </section>
             <footer>
                 Site criado por Nivia Alves
             </footer>
         
+        </main>
+        
     </div>
-       
+         <!-- Modal -->
+    <div class="container text-center">  
+        <div class="modal fade" id="ModalCarousel" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+
+            <div class="modal-dialog" role="document">
     
-    <script src="javascript.js"></script>
+                <div class="modal-content">
+    
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    
+                </div>
+    
+                    <!-- The main div for carousel -->
+                    <div id="carousel-modal" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-modal" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-modal" data-slide-to="1" ></li>
+                            <li data-target="#carousel-modal" data-slide-to="2"></li>
+                            <li data-target="#carousel-modal" data-slide-to="3"></li>
+                        </ol>
+                        
+                        <!-- Sliding images startring -->
+                        <div class="carousel-inner">
+    
+                            <div class="item active"><img src="/static/imagens/cookie1.jpg" alt="cookie1"></div>
+    
+                            <div class="item"><img src="/static/imagens/cookie4.jpg" alt="cookie4"></div>
+                            <div class="item"><img src="/static/imagens/cookie5.jpg" alt="cookie5"></div>
+                            <div class="item"><img src="/static/imagens/cookie6.jpg" alt="cookie6"></div>
+                        </div>
+    
+                    
+                        <!-- next / Previous controls -->
+                        <a class="left carousel-control" href="#carousel-modal" data-slide="prev"><span class="icon-prev"></span></a>
+                        <a class="right carousel-control" href="#carousel-modal" data-slide="next"><span class="icon-next"></span></a>
+    
+                    </div>
+    
+             
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Bolos -->
+    <div class="container text-center">  
+        <div class="modal fade" id="ModalCarouselB" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+
+            <div class="modal-dialog" role="document">
+    
+                <div class="modal-content">
+    
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    
+                </div>
+    
+                    <!-- The main div for carousel -->
+                    <div id="carousel-modalB" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-modalB" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-modalB" data-slide-to="1" ></li>
+                            <li data-target="#carousel-modalB" data-slide-to="2"></li>
+                            <li data-target="#carousel-modalB" data-slide-to="3"></li>
+                        </ol>
+                        
+                        <!-- Sliding images startring -->
+                        <div class="carousel-inner">
+    
+                            <div class="item active"><img src="/static/imagens/bolo1.jpg" alt="bolo1"></div>
+    
+                            <div class="item"><img src="/static/imagens/bolo2.jpg" alt="bolo2"></div>
+                            <div class="item"><img src="/static/imagens/bolo3.jpg" alt="bolo3"></div>
+                            <div class="item"><img src="/static/imagens/bolo4.jpg" alt="bolo4"></div>
+                        </div>
+    
+                    
+                        <!-- next / Previous controls -->
+                        <a class="left carousel-control" href="#carousel-modalB" data-slide="prev"><span class="icon-prev"></span></a>
+                        <a class="right carousel-control" href="#carousel-modalB" data-slide="next"><span class="icon-next"></span></a>
+    
+                    </div>
+                
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pães -->
+    <div class="container text-center">  
+        <div class="modal fade" id="ModalCarouselP" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+
+            <div class="modal-dialog" role="document">
+    
+                <div class="modal-content">
+    
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    
+                </div>
+    
+                    <!-- The main div for carousel -->
+                    <div id="carousel-modalP" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-modalP" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-modalP" data-slide-to="1" ></li>
+                            <li data-target="#carousel-modalP" data-slide-to="2"></li>
+                            <li data-target="#carousel-modalP" data-slide-to="3"></li>
+                        </ol>
+                        
+                        <!-- Sliding images startring -->
+                        <div class="carousel-inner">
+    
+                            <div class="item active"><img src="/static/imagens/bolo1.jpg" alt="bolo1"></div>
+    
+                            <div class="item"><img src="/static/imagens/bolo2.jpg" alt="bolo2"></div>
+                            <div class="item"><img src="/static/imagens/bolo3.jpg" alt="bolo3"></div>
+                            <div class="item"><img src="/static/imagens/bolo4.jpg" alt="bolo4"></div>
+                        </div>
+    
+                    
+                        <!-- next / Previous controls -->
+                        <a class="left carousel-control" href="#carousel-modalP" data-slide="prev"><span class="icon-prev"></span></a>
+                        <a class="right carousel-control" href="#carousel-modalP" data-slide="next"><span class="icon-next"></span></a>
+    
+                    </div>
+                
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+       <!-- Modal Especiais -->
+       <div class="container text-center">  
+        <div class="modal fade" id="ModalCarouselE" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+
+            <div class="modal-dialog" role="document">
+    
+                <div class="modal-content">
+    
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    
+                </div>
+    
+                    <!-- The main div for carousel -->
+                    <div id="carousel-modalE" class="carousel slide" data-ride="carousel" data-interval="5000">
+                        
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-modalE" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-modalE" data-slide-to="1" ></li>
+                            <li data-target="#carousel-modalE" data-slide-to="2"></li>
+                            <li data-target="#carousel-modalE" data-slide-to="3"></li>
+                        </ol>
+                        
+                        <!-- Sliding images startring -->
+                        <div class="carousel-inner">
+    
+                            <div class="item active"><img src="/static/imagens/bolo1.jpg" alt="bolo1"></div>
+    
+                            <div class="item"><img src="/static/imagens/bolo2.jpg" alt="bolo2"></div>
+                            <div class="item"><img src="/static/imagens/bolo3.jpg" alt="bolo3"></div>
+                            <div class="item"><img src="/static/imagens/bolo4.jpg" alt="bolo4"></div>
+                        </div>
+    
+                    
+                        <!-- next / Previous controls -->
+                        <a class="left carousel-control" href="#carousel-modalE" data-slide="prev"><span class="icon-prev"></span></a>
+                        <a class="right carousel-control" href="#carousel-modalE" data-slide="next"><span class="icon-next"></span></a>
+    
+                    </div>
+                
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script src="/static/javascript.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>
