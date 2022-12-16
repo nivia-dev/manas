@@ -49,7 +49,10 @@ html, body {
 header {
     min-height: 150px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    
+    
 }
 
 nav {
@@ -59,7 +62,7 @@ nav {
     font-weight: bold;
     transition-duration: 0.5s;
     text-align: center;
-
+    
 }
     
 main {
@@ -108,25 +111,19 @@ h1#nut, #pat {
 a {
     color: var(--corconf3);
     margin-right: 10px;
+    font-size: 2rem;
+    
 }
-a:link, a:visited, a:active {
+.conf nav > a:link, a:visited, a:active {
     text-decoration: none;
 }
 
-a:visited {
-    color: rgb(255, 255, 255);
-    }
 
-a:active {
-    color: var(--corconf3);
-    }
-a:hover{
-    text-decoration: underline overline;
-    color: var(--corconf3);
-    background-color: var(--corconf0);
-    font-size: 2rem;
-    }
 
+footer {
+    padding: 5px;
+    text-align: center;
+}
 
 /*CSS index*/
 body.ind {
@@ -161,25 +158,36 @@ body.conf {
 
 .conf header > h1 {
     color: var(--corconf3);
-    font-size: 6vw;
+    font-size: 5vw;
     font-variant: small-caps;
     font-weight: bold;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267)
 }
 
+.conf header > p {
+    font-size: 2vw;
+}
 
 .conf nav {
     background-image: linear-gradient(to bottom, var(--corconf1), var(--corconf2));
-    /*background-color: var(--corconf2);*/
     
 }
 
+.conf nav > a:visited {
+    color: var(--corconf);
+    }
 
+.conf nav > a:active {
+    color: var(--corconf3);
+    }
+ 
 
 .conf nav > a:hover {
-    background-color: var(--corconf1);
-    color: var(--corconf2)
+    background-color: var(--corconf0);
+    color: var(--corconf3);
+    text-decoration: underline overline;
 }
+
 
 button {
     display: block;
