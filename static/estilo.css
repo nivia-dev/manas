@@ -214,12 +214,12 @@ button {
 }
 
 .conf section#bis {
-    background-image: url(../imagens/fundo_cookies.jpg);
+    background-image: url(imagens/fundo_cookies.jpg);
     background-position: right center;
 }
 
 .conf section#pao {
-    background-image: url(../imagens/fundo_pao.jpg);
+    background-image: url(imagens/fundo_pao.jpg);
     background-position: right center;
 }
 .modal-header {
