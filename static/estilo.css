@@ -214,7 +214,7 @@ button {
 }
 
 .conf section#bis {
-    background-image: url(/static/imagens/fundo_cookies.jpg);
+    background-image: url(imagens/fundo_cookies.jpg);
     background-position: right center;
 }
 
