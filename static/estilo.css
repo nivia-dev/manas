@@ -234,7 +234,7 @@ button {
     border-radius: 10px;
 }
 
-.btn-info:hover {
+.btn-info:hover, .btn-info:focus {
     background-color: var(--corconf0);
     color: black;
     border-color: var(--corconf3);
