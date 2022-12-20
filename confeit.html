@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria</title>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="static/estilo.css">
         
 </head>                                                         
@@ -17,8 +18,10 @@
             
         </header>
         <nav>
-            <a href="sobreConf.html">Sobre</a>
-            <a href="contatoConf.html">Contato</a>
+            
+            <button class="btn btn-primary" id="open-sobre">Sobre</button>
+            <button class="btn btn-primary" id="modal_redes">Contato</a></button>
+               
         </nav>
         <main>
             <section class="padrao" id="bis">
@@ -63,8 +66,74 @@
         <footer>
             Site criado por Nivia Alves
         </footer>
-        
+       
     </div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Sobre</h2>
+            <button id="close-sobre">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>
+                Iniciei na área de eventos e festas aos 15 anos com recreação para crianças, em seguida despertei o interesse pela área de decoração infantil, escultura em isopor e ornamentação de casamentos. Passei a frequentar diversos cursos e buscar especialização em confeitaria de bolos, doces e ovos de Páscoa artísticos até ministrar os meus próprios cursos.</p><br>
+
+            <p>
+                Hoje me dedico exclusivamente à confeitaria, me especializando em cookies, biscoitos e pães.</p>
+
+                <p id="nome">
+                    Marília
+                </p>
+            </p>
+        </div>
+    </div>
+    <!-- Modal Sobre
+    <div class="modal" id="modal-sob">
+        <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <h2>Sobre</h2>
+                </div>
+                <div class="modal_sobre" id="text">
+                    <p> Iniciei na área de eventos e festas aos 15 anos com recreação para crianças, em seguida despertei o interesse pela área de decoração infantil, escultura em isopor e ornamentação de casamentos. Passei a frequentar diversos cursos e buscar especialização em confeitaria de bolos, doces e ovos de Páscoa artísticos até ministrar os meus próprios cursos.</p>
+
+                    <p>Hoje me dedico exclusivamente à confeitaria, me especializando em cookies, biscoitos e pães.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-close" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div> -->
+
+    <!-- Modal contato -->
+    <div class="modal" id="modal-cont">
+        <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <h2>Contato</h2>
+                </div>
+                <div class="modal_redes" id="redes">
+                    <div class="rede" id="whatsapp">
+                        <a href=" https://wa.me/5511995196152" target="_blank" rel="external"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="rede" id="instagram">
+                            <a href="https://www.instagram.com/maisquetrigo/" target="_blank" rel="external"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button class="btn btn-close" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+
          <!-- Modal -->
     <div class="container text-center">  
         <div class="modal fade" id="ModalCarousel" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
@@ -303,9 +372,10 @@
     </div>
 
    
-    <script src="/static/javascript.js"></script>
+    
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="static/java_script.js"></script>
     
 </body>
 </html>

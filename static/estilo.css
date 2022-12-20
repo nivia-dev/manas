@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Parisienne&family=Rubik+Dirt&family=Rubik+Puddles&display=swap');
 
 @font-face {
     font-family: 'Hacker';
@@ -10,6 +11,19 @@
     font-weight: normal;
     font-style: normal;
  }
+ @font-face {
+    font-family: 'Bellarina';
+    src: url('fontes/Bellarina.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quentin';
+    src: url('fontes/Quentin.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 :root {
 
@@ -30,6 +44,7 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --font_tec: 'Rubinik Dirt', cursive;
     --font-conf: 'Bungee Spice', cursive;
+    --font-confe: 'Rubik', cursive;
 
    
 }
@@ -161,6 +176,7 @@ body.conf {
     font-size: 5vw;
     font-variant: small-caps;
     font-weight: bold;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267)
 }
 
@@ -192,8 +208,13 @@ body.conf {
 button {
     display: block;
     
-}
     
+}
+
+button:hover {
+    opacity: 1;
+}
+
 .conf section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -230,8 +251,70 @@ button {
     background-image: url(imagens/fundo_pao.jpg);
     background-position: right center;
 }
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+
 .modal-header {
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.modal-body p {
+   font-size: 2rem;
+   margin: auto;
+   max-width: 500px;
+   text-align: justify;
+    
+}
+
+#nome {
+    font-family: 'Quentin';
+    font-size: 3rem;
+    text-align: right;
+    
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
 }
 
 .btn-info {
@@ -239,7 +322,7 @@ button {
     background-color: var(--corconf);
     border-color: var(--corconf3);
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .btn-info:hover, .btn-info:focus {
@@ -248,6 +331,21 @@ button {
     border-color: var(--corconf3);
 }
 
+
+.btn-primary {
+    font-size: 2rem;
+    background-color: var(--corconf0);
+    border-color: var(--corconf3);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+.btn-primary:hover, .btn-primary:focus, btn {
+    background-color: var(--corconf1);
+    color: black;
+    border-color: var(--corconf3);
+}
 
 
 .carousel-indicators, .modal-header, .carousel-inner {
@@ -270,7 +368,35 @@ span {
 .carousel-inner>.item>img {
     margin: auto;;
 }
+
+
+
+/*Redes*/
+.rede {
+    width: 50px;
+	height: 50px;
+	float:left;
+	margin-left: 20px;
+	transition: all .4s ease-out;
+	border-radius: 50%;
+
+}
+
+.rede:hover {
+    cursor: pointer;
+    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+    transform: translateY(-20px)
+}
+
+.rede#whatsapp{
+    background-color: rgb(165, 201, 165);
     
+}
+
+.rede#instagram {
+    background-color: rgb(97, 11, 11);
+}
+
 
 /*CSS Tecno*/
 
@@ -278,3 +404,17 @@ header.tec > h1 {
     font-family: 'Hacker', Arial ;
     font-size: 20px;
 }
+
+
+
+@media (max-width: 330px) {
+    section {
+        width: 80vw;
+    }                                                        
+}
+
+  
+
+  
+
+  
