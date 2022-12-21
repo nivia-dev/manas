@@ -66,8 +66,6 @@ header {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 5px;
-    
-    
 }
 
 nav {
@@ -76,8 +74,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
-    text-align: center;
-    
+    text-align: center;  
 }
     
 main {
@@ -86,7 +83,6 @@ main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -126,14 +122,8 @@ h1#nut, #pat {
 a {
     color: var(--corconf3);
     margin-right: 10px;
-    font-size: 2rem;
-    
+    font-size: 2rem;    
 }
-.conf nav > a:link, a:visited, a:active {
-    text-decoration: none;
-}
-
-
 
 footer {
     padding: 5px;
@@ -189,49 +179,41 @@ body.conf {
     
 }
 
-.conf nav > a:visited {
-    color: var(--corconf);
-    }
-
-.conf nav > a:active {
-    color: var(--corconf3);
-    }
- 
-
-.conf nav > a:hover {
-    background-color: var(--corconf0);
-    color: var(--corconf3);
-    text-decoration: underline overline;
-}
-
 
 button {
-    display: block;
-    
-    
-}
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
 
+}
+ 
 button:hover {
     opacity: 1;
 }
+
 
 .conf section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 3.5vw;
+    font-size: 4rem;
 }
 
 
 .conf  section.normal {
     color: black;
-}
+   }
 
 .conf  section.padrao {
    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0, 0.473);
    background-size: cover;
    background-attachment: fixed;
+   
 }
 
 .conf section.padrao > p {
@@ -247,11 +229,14 @@ button:hover {
     background-position: right center;
 }
 
+
 .conf section#pao {
     background-image: url(imagens/fundo_pao.jpg);
     background-position: right center;
 }
-#modal {
+
+
+#modal, #modals {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -265,7 +250,7 @@ button:hover {
   }
   
 
-#fade {
+#fade, #fades {
     position: fixed;
     top: 0;
     left: 0;
@@ -284,9 +269,9 @@ button:hover {
     padding-bottom: 1rem;
 }
 
-#fade,
-#modal {
-    transition: 0.5s;
+#fade, #fades,
+#modal, #modals {
+    position: 0.5s;
     opacity: 1;
     pointer-events: all;
 }
@@ -307,15 +292,48 @@ button:hover {
     
 }
 
-#modal.hide,
-#fade.hide {
+#modal.hide, #modals.hides,
+#fade.hide, #fades.hides {
     opacity: 0;
     pointer-events: none;
 }
 
-#modal.hide {
+#modal.hide, #modals.hides {
     top: 0;
 }
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#email {
+    float: left;
+}
+
+
+#what {
+    float: right;
+}
+
+
+.social img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    box-sizing: border-box;
+}
+.social img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    transition: transform .5s, border 1s;
+}
+
+
 
 .btn-info {
     font-size: 2rem;
@@ -371,31 +389,6 @@ span {
 
 
 
-/*Redes*/
-.rede {
-    width: 50px;
-	height: 50px;
-	float:left;
-	margin-left: 20px;
-	transition: all .4s ease-out;
-	border-radius: 50%;
-
-}
-
-.rede:hover {
-    cursor: pointer;
-    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
-    transform: translateY(-20px)
-}
-
-.rede#whatsapp{
-    background-color: rgb(165, 201, 165);
-    
-}
-
-.rede#instagram {
-    background-color: rgb(97, 11, 11);
-}
 
 
 /*CSS Tecno*/
@@ -410,11 +403,12 @@ header.tec > h1 {
 @media (max-width: 330px) {
     section {
         width: 80vw;
+       
     }                                                        
 }
 
-  
-
-  
-
-  
+@media (max-width: 460px) {
+    .conf section {
+        font-size: 3rem;
+    }
+}
