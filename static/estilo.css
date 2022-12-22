@@ -412,6 +412,12 @@ header.tec > h1 {
     }
 }
 
+@media (max-width: 420px) {
+    .conf section > p {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 320px) {
     section {
         width: 80vw;  
