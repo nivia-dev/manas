@@ -273,7 +273,7 @@ button:hover {
     text-align: center;
 }
 
-button#close-contato {
+button#close-contato, #close-sobre {
   padding: 5px;
 }
 
