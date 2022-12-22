@@ -269,6 +269,13 @@ button:hover {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
+.modal-header > h2 {
+    text-align: center;
+}
+
+button#close-contato {
+  padding: 5px;
+}
 
 #fade, #fades,
 #modal, #modals {
